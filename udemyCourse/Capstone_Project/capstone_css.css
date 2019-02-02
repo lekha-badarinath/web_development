@@ -1,0 +1,32 @@
+body {
+  text-align: center;
+  background-color: #38393a;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  border: 70px solid #0a7d7f;
+  border-top: 0px;
+}
+h2{
+  margin-bottom: 50px;
+}
+
+.paragraph{
+  /* border: 1px solid #38393a; */
+  margin: 0px 200px 0px 200px;
+}
+
+input{
+  font-size: 26px;
+
+}
+
+#sign_up{
+  background-color: #f49d41;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  height: 60px;
+  width: 150px;
+}
+#sign_up:hover{
+  background-color: #42f4f4;
+}

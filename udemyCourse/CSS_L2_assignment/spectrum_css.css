@@ -1,0 +1,36 @@
+h1{
+  background-color: gray;
+  font-family: 'Bitter', serif;
+  text-align: center;
+  color: lightblue;
+  padding: 20px;
+}
+.art{
+  margin:auto;
+}
+td{
+  height: 250px;
+  width: 100px;
+  border: 1px solid white;
+  padding: 100px;
+}
+
+#one{
+  background-color: #E66527;
+}
+
+#two{
+  background-color: #F2C078;
+}
+
+#three{
+  background-color: #FAEDCA;
+}
+
+#four{
+  background-color: #C1DBB3;
+}
+
+#five{
+  background-color: #7EBC89;
+}
