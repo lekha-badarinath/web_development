@@ -1,0 +1,135 @@
+@keyframes boxes {
+  0% {left:0px;top:0px}
+  25% {left:200px;top:0px}
+  50% {left:200px;top:200px}
+  100 {left:0px;top:0px}
+}
+
+.boxes{
+  animation-name:boxes;
+  animation-duration: 10s;
+  animation-iteration-count: 3;
+}
+
+td{
+  background-color: lightgray;
+  border: 1px solid lightgray;
+  height: 50px;
+  width: 50px;
+  border-radius: 15%;
+}
+
+@keyframes one {
+  from{background-color: gray;}
+  to{background-color: lightblue;
+  border-color: lightblue;}
+
+}
+#one{
+  animation-name: one;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+}
+
+@keyframes two {
+  from{background-color: gray;}
+  to{background-color: lightgreen;
+  border-color: lightgreen;}
+}
+
+#two{
+  animation-name: two;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+}
+
+@keyframes three {
+  from{background-color: gray;}
+  to{background-color: #1A535C;
+  border-color: #1A535C;}
+}
+
+#three{
+  animation-name: three;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-delay: 4s;
+}
+
+@keyframes four {
+  from{background-color: gray;}
+  to{background-color: #4ECDC4;
+  border-color: #4ECDC4;}
+}
+
+#four{
+  animation-name: four;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-delay: 3.5s;
+}
+
+@keyframes five {
+  from{background-color: gray;}
+  to{background-color: #F7FFF7;
+  border-color: #F7FFF7;}
+}
+
+#five{
+  animation-name: five;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-delay: 1.5s;
+}
+
+@keyframes six {
+  from{background-color: gray;}
+  to{background-color: #FF6B6B;
+  border-color: #FF6B6B;}
+}
+
+#six{
+  animation-name: six;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes seven {
+  from{background-color: gray;}
+  to{background-color: #FFE66D;
+  border-color: #FFE66D;}
+}
+
+#seven{
+  animation-name: seven;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-delay: 2.5s;
+}
+
+@keyframes eight {
+  from{background-color: gray;}
+  to{background-color: #A5668B;
+  border-color: #A5668B;}
+}
+
+#eight{
+  animation-name: eight;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+}
+
+@keyframes nine {
+  from{background-color: gray;}
+  to{background-color: #fcf17b;
+  border-color: #fcf17b;}
+}
+
+#nine{
+  animation-name: nine;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}

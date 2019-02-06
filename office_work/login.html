@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Log In</title>
+  </head>
+  <body>
+    <h1>Welcome to Cerner RevWorks</h1>
+    <h2>Business Intelligence Team</h2>
+    <form class="logIn" name = "logIn" onsubmit="return(validate())">
+      <label for="userName">User ID:</label>
+      <input id = "userName" type="text" name="userName" placeholder="Please enter your ID" required><br>
+      <label for="password">Password:</label>
+      <input id = "password" type="password" name="password" required><br>
+      <input type="submit" name="submit"  value="Sign In">
+    </form>
+    <script type="text/javascript">
+      function validate(){
+      if ((document.logIn.userName.value == "Lekha" & document.logIn.password.value == "123"){
+      alert("Correct")
+      return True}
+      else{
+      alert("Incorrect")
+      return False}}
+    </script>
+  </body>
+</html>
