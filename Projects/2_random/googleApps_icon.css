@@ -1,16 +1,36 @@
-@keyframes boxes {
-  0% {left:0px;top:0px}
-  25% {left:200px;top:0px}
-  50% {left:200px;top:200px}
-  100 {left:0px;top:0px}
+@keyframes boxes_one {
+  20% {left:0px;top:0px}
+  40% {left:1100px;top:0px}
+  60% {left:1100px;top:430px}
+  80% {left:0px;top:430px}
+  100% {left:1100px;top:0px}
 }
 
-.boxes{
-  animation-name:boxes;
+.boxes_one{
+  position: absolute;
+  left:0px;
+  top:0px;
+  animation-name:boxes_one;
   animation-duration: 10s;
   animation-iteration-count: 3;
 }
 
+@keyframes boxes_two {
+  20% {left:1100px;top:0px}
+  40% {left:0px;top:0px}
+  60% {left:0px;top:430px}
+  80% {left:1100px;top:430px}
+  100% {left:0px;top:0px}
+}
+
+.boxes_two{
+  position: absolute;
+  left: 1100px;
+  top:0px;
+  animation-name:boxes_two;
+  animation-duration: 10s;
+  animation-iteration-count: 3;
+}
 td{
   background-color: lightgray;
   border: 1px solid lightgray;
