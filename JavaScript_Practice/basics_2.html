@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Basics-2</title>
+    <link rel="icon" href="https://png.pngtree.com/svg/20170719/javascript_633988.png">
+  </head>
+  <header>
+    <p>Writing JavaScript within &ltscript&gt and &lt/script&gt elements.</p>
+    <hr>
+  </header>
+  <body>
+    <p>1. Below line is displaying the sum of 145+256 using JavaScript</p>
+    <p id="try1"></p>
+    <hr>
+    <p>2. Now, calculation will be done when you click the button:<br>The javascript is describled within a function.
+    Addition will be done when the button is clicked and the function is called.</p>
+    <p id="add">145 + 256</p>
+    <button type="button" name="add" onclick="add()">Give me the sum</button>
+    <hr>
+    <p id='alert'>3. To get the result in an alert box</p>
+    <p><em>window.alert("message")</em></p>
+    <button type="button" name="add_alert" onclick="add2()">Alert Box</button>
+    <hr>
+    <p>4. To get the result in console.</p>
+    <p id="consoleLog"></p>
+    <button type="button" name="add_consoleLog" onclick="add3()">Console Log</button>
+    <hr>
+    <p>5. Using the "==" comparator operator:</p>
+    <p>undefined == null -- <span id="operatorTest1"></span></p>
+    <p>undefined === null -- <span id="operatorTest2"></span></p>
+    <p>happy == HAPPY -- <span id="operatorTest3"></span></p>
+    <p>5+2+"3" = <span id="operatorTest4"></span><em> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp --5 and 2 are treated like numbers and added. Since 3 is a string,
+    (5+2=7) 7 and 3 are concatenated.</em></p>
+    <p>"3"+5+2 = <span id="operatorTest5"></span><em> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp --Since a string("3") is in the beginning, 5 and 2 are also treated
+    as strings and all of them are concatenated.</em></p>
+    <hr>
+    <script type="text/javascript">
+      document.getElementById('try1').innerHTML=143+256;
+      function add() {
+        document.getElementById('add').innerHTML = 145+256;
+      }
+      function add2() {
+        window.alert(145+256);
+      }
+      function add3() {
+        document.getElementById('consoleLog').innerHTML = "Go to the console (Ctl+Shift+I) to see the result...";
+        console.log(145+256);
+      }
+      document.getElementById('operatorTest1').innerHTML = undefined==null;
+      document.getElementById('operatorTest2').innerHTML = undefined===null;
+      document.getElementById('operatorTest3').innerHTML = "happy"=="HAPPY";
+      document.getElementById('operatorTest4').innerHTML = 5+2+"3";
+      document.getElementById('operatorTest5').innerHTML = "3"+5+2;
+    </script>
+  </body>
+</html>

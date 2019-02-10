@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Basics-1</title>
+    <link rel="icon" href="https://png.pngtree.com/svg/20170719/javascript_633988.png">
+  </head>
+  <header>
+    <p>Writing Inline JavaScript....</p>
+    <hr>
+  </header>
+  <body>
+    <h3>1. Replacing content:</h3>
+    <p><em>(document.getElementById('id').innerHTML = 'whatever you want to write')</em></p>
+    <p id="welcome">Welcome to JavaScript.</p>
+    <input type="button" name="welcome" width = "40px"
+    onclick="document.getElementById('welcome').innerHTML = 'Have a great time learning JavaScript.'" value="Click here!">
+    <hr>
+    <h3>2. Change the image displayed:</h3>
+    <p><em>(document.getElementById('id').src = 'picture source')</em></p>
+    <p>Which animal do you like?</p>
+    <button type="button" name="button2"
+    onclick="document.getElementById('animal').src='dog.jpeg'">Dog</button>
+    <img id="animal" src="catVsDog.jpg" alt="Cat Vs. Dog image" width='250' height='200'>
+    <button type="button" name="button1"
+    onclick="document.getElementById('animal').src='cat.jpg'">Cat</button>
+    <hr>
+    <h3>3. Change CSS of elements:</h3>
+    <p><em>(document.getElementById('id').style.(display/color/fontSize/...) = "value")</em></p>
+     <p>JavaScript can change the styling of elements!</p>
+     <p id="hide">This paragraph will be hidden after you click on 'Hide'.</p>
+     <button type="button" name="hide"
+     onclick="document.getElementById('hide').style.display='none'">Hide</button>
+     <button type="button" name="seek"
+     onclick="document.getElementById('seek').style.display='block'">Seek</button>
+     <p id="seek" style="display:None">This paragraph was displayed after you clicked on 'Seek'.</p>
+     <hr>
+     <h3>4. Creating a link:</h3>
+     <p><em>window.open('page address')</em></p>
+     <button type="button" name="navigate1" onclick="window.open('basics_2.html')">Next Page</button>
+     <hr>
+  </body>
+  <footer>Page 1</footer>
+</html>
