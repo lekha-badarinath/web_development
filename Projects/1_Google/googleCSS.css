@@ -130,6 +130,7 @@ a:hover{
   left: 862px;
   top: -18px;
 }
-hr{
-  background-color: #eaebed;
+#set:hover{
+  text-decoration:underline;
+
 }
