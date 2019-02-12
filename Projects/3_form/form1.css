@@ -1,0 +1,46 @@
+:root{
+  --text-color:#38ebf4;
+}
+body, html{;
+  height: 100%;
+
+}
+h2{
+  text-align: center;
+  color: var(--text-color);
+}
+.backgroundImg{
+  background-image: url("https://cdn.pixabay.com/photo/2018/02/28/02/30/paper-3187096_1280.jpg");
+  height: 100%;
+  filter: blur(5px);
+}
+
+.form1{
+  position: absolute;
+  top: 1%;
+  left: 30%;
+}
+
+fieldset{
+  background-color: rgba(0,0,0,0.5);
+  color: var(--text-color);
+}
+
+input, textarea{
+  border: 0.5px solid white;
+  background: transparent;
+  color: var(--text-color);
+}
+
+#firstName, #secondName, #birthday, #favouriteTime, #timesOfDay, #about{
+  color:white;
+}
+
+input:focus, textarea:focus{
+  outline: none;
+}
+::placeholder{
+  font-family: monospace;
+  color: lightgray;
+  font-size: 12px;
+}

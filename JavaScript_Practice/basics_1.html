@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>JavaScript Basics-1</title>
     <link rel="icon" href="https://png.pngtree.com/svg/20170719/javascript_633988.png">
+    <link rel="stylesheet" href="styling_one.css">
   </head>
   <header>
     <p>Writing Inline JavaScript....</p>
@@ -13,8 +14,8 @@
     <h3>1. Replacing content:</h3>
     <p><em>(document.getElementById('id').innerHTML = 'whatever you want to write')</em></p>
     <p id="welcome">Welcome to JavaScript.</p>
-    <input type="button" name="welcome" width = "40px"
-    onclick="document.getElementById('welcome').innerHTML = 'Have a great time learning JavaScript.'" value="Click here!">
+    <button type="button" name="welcome" width = "40px"
+    onclick="document.getElementById('welcome').innerHTML = 'Have a great time learning JavaScript.'">Click here!</button>
     <hr>
     <h3>2. Change the image displayed:</h3>
     <p><em>(document.getElementById('id').src = 'picture source')</em></p>
@@ -37,7 +38,7 @@
      <hr>
      <h3>4. Creating a link:</h3>
      <p><em>window.open('page address')</em></p>
-     <button type="button" name="navigate1" onclick="window.open('basics_2.html')">Next Page</button>
+     <button type="button" name="next1" onclick="window.open('basics_2.html')">Next Page</button>
      <hr>
   </body>
   <footer>Page 1</footer>

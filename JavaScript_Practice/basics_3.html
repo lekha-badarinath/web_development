@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Basics-3</title>
+    <link rel="icon" href="https://png.pngtree.com/svg/20170719/javascript_633988.png">
+    <link rel="stylesheet" href="styling_one.css">
+  </head>
+  <body>
+    <h3>1. Adding elements using functions to take inputs</h3>
+    <input id = "num1" type="number" name="num1" placeholder="Enter the first number">
+    <input id = "num2" type="number" name="num2" placeholder="Enter the second number">
+    <button type="button" name="button" onclick="one()">Submit</button>
+    <p id="one"></p>
+    <hr>
+    <script type="text/javascript">
+      function one(){
+        var x=parseInt(document.getElementById('num1').value);
+        var y=parseInt(document.getElementById('num2').value);
+        document.getElementById('one').innerHTML=x+y;
+        console.log("Addition completed successfully")
+      }
+    </script>
+  </body>
+</html>

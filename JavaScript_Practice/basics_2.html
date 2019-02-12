@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>JavaScript Basics-2</title>
     <link rel="icon" href="https://png.pngtree.com/svg/20170719/javascript_633988.png">
+    <link rel="stylesheet" href="styling_one.css">
   </head>
   <header>
     <p>Writing JavaScript within &ltscript&gt and &lt/script&gt elements.</p>
@@ -35,6 +36,18 @@
     <p>"3"+5+2 = <span id="operatorTest5"></span><em> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp --Since a string("3") is in the beginning, 5 and 2 are also treated
     as strings and all of them are concatenated.</em></p>
     <hr>
+    <p>5. Using typeof:</p>
+    <p>If the value of a variable is undefined, typeof returns 'undefined'
+      <br><br>var num;
+      <button type="button" name="button" onclick="typeOf1()">Know the type</button>
+    </p>
+    <p>if the value of a variable is null, typeof returns 'object'
+      <br><br>var num = null;
+      <button type="button" name="button" onclick="typeOf2()">Know the type</button>
+    </p>
+    <hr>
+    <button type="button" name="previous2" onclick="window.open('basics_1.html')" style="width:110px;">Previous page</button>
+    <button type="button" name="next2" onclick="window.open('basics_3.html')">Next Page</button>
     <script type="text/javascript">
       document.getElementById('try1').innerHTML=143+256;
       function add() {
@@ -52,6 +65,15 @@
       document.getElementById('operatorTest3').innerHTML = "happy"=="HAPPY";
       document.getElementById('operatorTest4').innerHTML = 5+2+"3";
       document.getElementById('operatorTest5').innerHTML = "3"+5+2;
+      function typeOf1() {
+        var num;
+        alert(typeof num)
+      }
+      function typeOf2(){
+        var num=null;
+        alert(typeof num)
+      }
     </script>
   </body>
+  <footer><br>Page 2</footer>
 </html>

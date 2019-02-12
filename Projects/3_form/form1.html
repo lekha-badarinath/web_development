@@ -4,33 +4,38 @@
     <meta charset="utf-8">
     <title>Form One</title>
     <link rel="icon" href="form1_icon.png">
+    <link rel="stylesheet" href="form1.css">
   </head>
   <body>
-    <form class="personalInfo" action="index.html" method="post">
-      <fieldset>
-        <legend style="text-align:center">Personal Information</legend>
-        <label for="firstName" style="margin-right:20px;">First Name:</label>
-        <input id="firstName" type="text" name="firstName" size="30" placeholder="Iron" required autofocus>
-        <br><br>
-        <label for="secondName" style="margin-right:3px;">Second Name:</label>
-        <input id="secondName" type="text" name="secondName" size="30" placeholder="Man" required>
-        <hr>
-        <label for="birthday">When were you born?</label>
-        <br>
-        <input id="birthday" type="date" name="birthday" placeholder="Select the date">
-        <br><br>
-        <label for="favouriteTime">Which is your favourite time of the day?</label>
-        <br>
-        <input id="favouriteTime" type="text" name="favouriteTime" list="timesOfDay" placeholder="Select one">
-        <datalist id="timesOfDay" class="timesOfDay">
-          <option value="Morning"></option>
-          <option value="Afternoon"></option>
-          <option value="Evening"></option>
-          <option value="Night"></option>
-        </datalist>
-      </fieldset>
-      <br><br>
-      <textarea name="brief" rows="8" cols="70" placeholder="Let us know a little about you..."></textarea>
-    </form>
+    <div class="backgroundImg"></div>
+    <div class="form1">
+      <h2>Form One</h2>
+      <form class="personalInfo" action="index.html" method="post">
+        <fieldset>
+          <legend style="text-align:center">Personal Information</legend>
+          <label for="firstName" style="margin-right:20px;">First Name:</label>
+          <input id="firstName" type="text" name="firstName" size="30" height="40px" required autofocus>
+          <br><br>
+          <label for="secondName" style="margin-right:3px;">Second Name:</label>
+          <input id="secondName" type="text" name="secondName" size="30" height="40px"required>
+          <hr>
+          <label for="birthday">When were you born?</label>
+          <br>
+          <input id="birthday" type="date" name="birthday" placeholder="Select the date">
+          <br><br>
+          <label for="favouriteTime">Which is your favourite time of the day?</label>
+          <br>
+          <input id="favouriteTime" type="text" name="favouriteTime" list="timesOfDay" placeholder="Select one">
+          <datalist id="timesOfDay" class="timesOfDay">
+            <option value="Morning"></option>
+            <option value="Afternoon"></option>
+            <option value="Evening"></option>
+            <option value="Night"></option>
+          </datalist>
+          <br><br>
+          <textarea id="about" name="brief" rows="8" cols="70" placeholder="Let us know a little about you..."></textarea>
+        </fieldset>
+      </form>
+    </div>
   </body>
 </html>
