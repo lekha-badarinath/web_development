@@ -10,7 +10,7 @@ h2{
   color: var(--text-color);
 }
 .backgroundImg{
-  background-image: url("https://cdn.pixabay.com/photo/2018/02/28/02/30/paper-3187096_1280.jpg");
+  background-image: url("background1.jpg");
   height: 100%;
   filter: blur(5px);
 }
