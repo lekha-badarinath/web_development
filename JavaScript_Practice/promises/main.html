@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Promises in JavaScript</title>
+    <link rel="stylesheet" href="sample.css">
+    <script type="text/javascript" src = "promises.js"></script>
+  </head>
+  <body>
+    <div>
+      <script>
+        function changeColor(){
+          var element = document.getElementById('sample');
+          element.classList.add('red');
+        }
+      </script>
+
+      <p  id = 'sample'>Sample text</p>
+      <button type="button" name="button" onclick = changeColor()>Click here</button>
+      <h4>Promise to add a new post to the list of posts</h4><br>
+      <p class ="promise"></p>
+    </div>
+
+  </body>
+</html>

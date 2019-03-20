@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h3>Hello!</h3>
+    <script type="text/javascript">
+        function add(a,b,callback){
+          let sum = a+b;
+          document.write("Sum-", sum + "<br>");
+          callback();
+        }
+        function mess(){
+          document.write("This will be displayed after addition");
+        }
+        add(14,12,mess)
+    </script>
+  </body>
+</html>

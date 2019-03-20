@@ -3,58 +3,61 @@
   <head>
     <meta charset="utf-8">
     <title>Vacation Rentals, Homes, Experiences & Places - Airbnb</title>
-    <link rel="stylesheet" href="airbnb.css">
-    <link rel="Icon" href="airbnb.png">
   </head>
-  <div class="backgroundImg"></div>
-  <header>
-    <div class="headerOptions">
-      <img src="airbnb2.png" alt="airbnb" width="50" height="50">
-      <ul class="header">
-          <li>Become a host</li>
-          <li>Help</li>
-          <li>Sign up</li>
-          <li>Log in</li>
-      </ul>
-    </div>
-  </header>
   <body>
-    <div class="loginForm">
-      <form class="login" action="index.html">
-          <fieldset>
-          <h1>
-            Book unique <span style="color:inherit;cursor:pointer;text-decoration:none">homes</span>
-           and experiences.
-         </h1>
-           <label for="location">WHERE</label>
-           <br>
-           <input id="location" type="text" name="location" placeholder="Anywhere">
-           <br>
-           <ul id="dates">
-             <li>
-               <label for="checkIn">CHECK IN</label>
-               <br>
-               <input id="checkIn" type="date" name="" value="dd-mm-yyyy">
-            </li>
-            <li>
-               <label for="checkOut">CHECK OUT</label>
-               <br>
-               <input id="checkOut" type="date" name="" value="dd-mm-yyyy">
-             </li>
-           </ul>
-           <label for="guests">GUESTS</label>
-           <br>
-           <input id="guests" type="text" name="guests" placeholder="Guests" list="guestList">
-           <datalist id="guestList" class="guestList">
-             <option value="Adults"></option>
-             <option value="Children"></option>
-             <option value="Infants"></option>
-           </datalist>
-           <br><br>
-           <button id="search" type="button" name="button">Search</button>
-         </fieldset>
-      </form>
-
+    <div class="backgroudPic">
+      <img src="" alt="Airbnb home page photo">
     </div>
+    <header>
+      <div class="logo">
+        <img src="" alt="Airbnb logo">
+      </div>
+      <div class="tabs">
+        <div id = "hostHome" class="tabcontents">
+          <h4>Host A Home</h4>
+        </div>
+        <div id = "hostExp" class="tabcontents">
+          <h4>Host an Experience</h4>
+        </div>
+        <div id = "help" class="tabcontents">
+          <h4>Help</h4>
+        </div>
+        <div id = "signUp" class="tabcontents">
+          <h4>Sign Up</h4>
+        </div>
+        <div id = "logIn" class="tabcontents">
+          <h4>Log In</h4>
+        </div>
+      </div>
+    </header>
+    <div class="middleBody">
+      <form class="searchForm" action="index.html" method="post">
+        <fieldset>
+          <h1>Book unique homes and<br>experiences.</h1>
+          <div class="formInputs">
+            <label for="where">WHERE</label><br>
+            <input id="where" type="text" name="where" placeholder="Anywhere">
+            <br><label for="checkIn">CHECK-IN</label><br>
+            <input id="checkIn" type="date" name="checkIn" value="mm/dd/yyyy">
+            <br><label for="checkout">CHECKOUT</label><br>
+            <input id="checkout" type="date" name="checkout" value="mm/dd/yyyy">
+            <br><label for="guests">GUESTS</label><br>
+            <div class="guests">
+              <select id="guests">
+                <option value=""disabled selected hidden>Guests</option>
+                <option value="Adults">Adults</option>
+                <option value="Children">Children</option>
+                <option value="Infants">Infants</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <footer>
+      <div class="footerText">
+        <p>Over 300<br>unique homes in Oregon</p>
+      </div>
+    </footer>
   </body>
 </html>
