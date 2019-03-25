@@ -1,44 +1,21 @@
-body,html{
+*{
+  /*To remove the default margin and padding for HTML elements*/
+  margin:0;
+  padding:0;
+}
+html,body{
   height: 100%;
+  overflow: hidden;
 }
 .background-pic{
-  background-image: url("fillerpic1.jpg");
+  background-image: url("fillerpic2.jpg");
+  height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100%;
-  width: 100%;
-
+  filter: blur(3px);
 }
 .dropdown{
-  position: absolute;
-  top: 5%;
-  left: 5%;
-  display: inline-block;
-  width: 300px;
-}
-.drop-down-box{
-  color: white;
-  position: absolute;
-  border: 0.5px solid white;
-  padding: 0px 15px 0px 15px;
-  border-radius: 2px;
-}
-
-.drop-down-box--content{
-  display:none;
-  color: white;
-  position: absolute;
-  border: 0.5px solid white;
-  padding: 0px 110px 0px 112px;
-  box-shadow: 5px 5px 10px 10px rgba(255,255,255,0.2);
-  z-index: -1;
-}
-
-.drop-down-box:hover{
-  background-color: lightblue;
-  color: black;
-}
-
-.dropdown:hover .drop-down-box--content{
-  display: block;
+  position: relative;
+  bottom: 70%;
+  text-align: center;
 }

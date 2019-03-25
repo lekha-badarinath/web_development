@@ -1,0 +1,117 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+body{
+  background-color: #7D7C7A;
+}
+
+.text{
+  font-family: 'ZCOOL XiaoWei', serif;
+}
+.word-css{
+  color: orange;
+  font-style:
+}
+
+#green_text{
+  color: lightgreen;
+  font-size: 1.5em;
+}
+#blue_text{
+  color: lightblue;
+  font-size: 1.5em;LB
+}
+.box__pink--sticky{
+  background: lightpink;
+  height: 50px;
+  width: 1262px;
+  position: sticky;
+  top: 0;
+}
+
+.sticky-class{
+  text-align: center;
+  padding-top: 15px;
+}
+
+.box__green--fixed{
+  background: lightgreen;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  position: fixed;
+  right: 10px;
+}
+
+.box__blue--fixed{
+  background: lightblue;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+}
+
+.box__green--static{
+  background: lightgreen;
+  height: 100px;
+  width: 100px;
+
+}
+
+.box__blue--static{
+  background: lightblue;
+  height: 100px;
+  width: 100px;
+  position: static;
+}
+
+.box__green--relative{
+  background: lightgreen;
+  height: 100px;
+  width: 100px;
+  /* Position specifications */
+  position: relative; /* Relative to where it's default position would be. This would be just below the text */
+  top: 100px;
+  left: 100px;
+}
+.box__blue--relative{
+  background: lightblue;
+  height: 100px;
+  width: 100px;
+  /* position: static; */
+}
+.absolute-class{
+  position: relative; /* Without declaring this(parent class) as relative, box__green--absolute will be place at the beginning of the body*/
+
+}
+.box__green--absolute{
+  background: lightgreen;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top:160px;   /*Remove top element and see.. Question- why does this happen?*/
+}
+
+.box__blue--absolute{
+  background: lightblue;
+  height: 100px;
+  width: 100px;
+}
+
+.metadata--positioning{
+  position: relative;
+  color: orange;
+  top: 120px;
+  text-align: center;
+}
+
+.metadata--link{
+  text-decoration: none;
+  color: white;
+  font-size: 2em;
+  padding-bottom: 20px;
+}
+.metadata--link:hover{
+  color: orange;
+}
