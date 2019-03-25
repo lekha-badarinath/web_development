@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Display Property - CSS</title>
+    <link rel="stylesheet" href="fileOne_display.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+  </head>
+  <body>
+    <div class="display">
+      <div class="display--initial">
+        <br><h2 class="text">Initial Display</h2><br>
+        <div class="box__blue"></div>
+        <div class="box__pink"></div>
+        <div class="box__green"></div>
+      </div>
+      <div class="display--none">
+        <br><h2 class="text">Using display property: <span class="word-css">None</span></h2><br>
+        <div class="box__blue box__blue--none"></div>
+        <div class="box__pink box__pink--none"></div>
+        <div class="box__green box__green--none"></div>
+      </div>
+      <div class="display--visibility_hidden">
+        <br><h2 class="text">Using visibility property: <span class="word-css">Hidden</span></h2><br>
+        <div class="box__blue box__blue--hidden"></div>
+        <div class="box__pink box__pink--hidden"></div>
+        <div class="box__green box__green--hidden"></div>
+      </div>
+      <div class="display--block">
+        <br><h2 class="text">Using display property: <span class="word-css">block</span></h2><br>
+        <p class="text">(I have declared all these boxed as "Span" elements.<br>Display of the green box is "Block")</p>
+        <span class="box__blue box__blue--block">Span element 1</span>
+        <span class="box__pink box__pink--block">Span element 2</span>
+        <span class="box__green box__green--block">Span element 3</span>
+      </div>
+      <div class="display--inline">
+        <br><h2 class="text">Using display property: <span class="word-css">Inline</span></h2><br>
+        <p class="text">(I have declared Box 1 and Box 2 as inline elements)</p>
+        <div class="box__blue box__blue--inline">Block element 1</div>
+        <div class="box__pink box__pink--inline">Block element 2</div>
+        <div class="box__green box__green--inline">Block element 3</div>
+      </div>
+      <div class="display--inline_block">
+        <br><h2 class="text">Using display property: <span class="word-css">Inline-Block</span></h2><br>
+        <p class="text">(I have declared Box 1 and Box 2 as inline-block elements)</p>
+        <div class="box__blue box__blue--inline_block">Block element 1</div>
+        <div class="box__pink box__pink--inline_block">Block element 2</div>
+        <div class="box__green box__green--inline_block">Block element 3</div>
+      </div>
+    </div>
+  </body>
+</html>
