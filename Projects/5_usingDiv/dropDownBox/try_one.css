@@ -1,21 +1,54 @@
 *{
-  /*To remove the default margin and padding for HTML elements*/
   margin:0;
   padding:0;
 }
-html,body{
+
+body,html{
   height: 100%;
-  overflow: hidden;
+  width: 100%;
+  background-color: #ABC7C8;
+  color: #2EC4B6;
+  font-family: 'Lora', serif;
+  font-size: 1.5em;
 }
-.background-pic{
-  background-image: url("fillerpic2.jpg");
-  height: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  filter: blur(3px);
-}
-.dropdown{
-  position: relative;
-  bottom: 70%;
+
+.drop-down{
   text-align: center;
+  position: relative;
+  top:40%;
+  left: 30%;
+  height: 20px;
+  width: 500px;
+
+}
+
+.drop-down__title{
+  border: 0.5px solid #2EC4B6;
+  border-radius: 10px;
+  height: 50px;
+  width: 500px;
+}
+
+.drop-down__options{
+  display: none;
+  list-style-type: none;
+  position: absolute;
+  top: 0;
+  height: 50px;
+  width: 500px;
+  z-index: 1;
+}
+
+.drop-down__options li:hover{
+  background: #DDE9C5;
+  border-radius: 10px;
+}
+
+.drop-down__title:hover{
+  background-color: #DAF2F0;
+  border-color: #DAF2F0;
+}
+
+.drop-down__title:hover .drop-down__options{
+  display: block;
 }
