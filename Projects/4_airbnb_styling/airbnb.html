@@ -3,61 +3,54 @@
   <head>
     <meta charset="utf-8">
     <title>Vacation Rentals, Homes, Experiences & Places - Airbnb</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Muli|Varela+Round" rel="stylesheet">
+    <link rel="stylesheet" href="airbnb.css">
   </head>
   <body>
-    <div class="backgroud-pic">
-      <img src="" alt="Airbnb home page photo">
-    </div>
-    <header>
-      <div class="logo">
-        <img src="" alt="Airbnb logo">
-      </div>
-      <div class="tabs">
-        <div id = "hostHome" class="tabcontents">
-          <h4>Host A Home</h4>
+    <div class="background-pic"></div>
+    <div class="content">
+      <header>
+        <div class="logo">
+          <p>airbnb</p>
         </div>
-        <div id = "hostExp" class="tabcontents">
-          <h4>Host an Experience</h4>
-        </div>
-        <div id = "help" class="tabcontents">
-          <h4>Help</h4>
-        </div>
-        <div id = "signUp" class="tabcontents">
-          <h4>Sign Up</h4>
-        </div>
-        <div id = "logIn" class="tabcontents">
-          <h4>Log In</h4>
-        </div>
-      </div>
-    </header>
-    <div class="middle-body">
-      <form class="search-Form" action="index.html" method="post">
-        <fieldset>
-          <h1>Book unique homes and<br>experiences.</h1>
-          <div class="form-inputs">
-            <label for="where">WHERE</label><br>
-            <input id="where" type="text" name="where" placeholder="Anywhere">
-            <br><label for="checkIn">CHECK-IN</label><br>
-            <input id="checkIn" type="date" name="checkIn" value="mm/dd/yyyy">
-            <br><label for="checkout">CHECKOUT</label><br>
-            <input id="checkout" type="date" name="checkout" value="mm/dd/yyyy">
-            <br><label for="guests">GUESTS</label><br>
-            <div class="guests">
-              <select id="guests">
-                <option value=""disabled selected hidden>Guests</option>
-                <option value="Adults">Adults</option>
-                <option value="Children">Children</option>
-                <option value="Infants">Infants</option>
-              </select>
+          <ul class="tabs">
+              <li>Host a home</li>
+              <li>Host an experience</li>
+              <li>Help</li>
+              <li>Sign up</li>
+              <li>Log in</li>
+          </ul>
+      </header>
+      <div class="middle-body">
+        <form class="search-form" action="index.html" method="post">
+            <h1>Book unique <span id="homes">homes</span> and<br>experiences.</h1>
+            <div class="form-inputs">
+              <br><label for="where">WHERE</label><br>
+              <input id="where" type="text" name="where" placeholder="Anywhere">
+              <br><label for="checkIn">CHECK-IN</label>
+              <label for="checkout" class="check-out">CHECKOUT</label><br>
+              <input id="checkIn" type="date" name="checkIn" value="mm/dd/yyyy">
+              <input id="checkout" type="date" name="checkout" value="mm/dd/yyyy">
+              <br><label for="guests">GUESTS</label><br>
+              <div class="guests">
+                <select id="guests">
+                  <option value=""disabled selected hidden>Guests</option>
+                  <option value="Adults">Adults</option>
+                  <option value="Children">Children</option>
+                  <option value="Infants">Infants</option>
+                </select>
+              </div>
             </div>
-          </div>
-        </fieldset>
-      </form>
-    </div>
-    <footer>
-      <div class="footer-text">
-        <p>Over 300<br>unique homes in Oregon</p>
+            <div>
+              <button type="button" name="button"class="search-button">Search</button>
+            </div>
+        </form>
       </div>
-    </footer>
+      <footer>
+        <div class="footer-text">
+          <p>Over 300<br>unique homes in Oregon</p>
+        </div>
+      </footer>
+  </div>
   </body>
 </html>

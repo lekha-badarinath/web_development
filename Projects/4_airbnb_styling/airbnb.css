@@ -1,0 +1,142 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+body, html{
+  height:100%;
+  overflow-x: hidden;
+}
+
+.background-pic{
+  background-image: url("background1.jpg");
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.content{
+  position: absolute;
+  top:0;
+  left: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.logo{
+  position: relative;
+  top: 15px;
+  left: 15px;
+  font-size: 35px;
+  font-weight: bold;
+  color: red;
+  cursor: pointer;
+}
+
+.tabs{
+  position: relative;
+  top: -20px;
+  left: 800px;
+}
+.tabs li{
+  list-style-type: none;
+  display: inline-block;
+  color: white;
+  padding: 0px 15px 30px 15px;
+  font-size: 14px;
+}
+
+.tabs li:hover{
+  border-bottom: 2px solid white;
+  cursor: pointer;
+}
+
+.search-form{
+  position: absolute;
+  left: 120px;
+  top: 105px;
+  width: 370px;
+  border: none;
+  background-color: white;
+  color: #3A3B3B;
+  /* font-size: 1.1em; */
+  padding: 30px 10px 40px 30px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #535454;
+}
+
+#homes{
+  cursor: pointer;
+}
+.form-inputs{
+  font-size: 12px;
+}
+.form-inputs label{
+  cursor: pointer;
+}
+
+.form-inputs input{
+  border: 1px solid #E0D7D7;
+  width: 350px;
+  height: 45px;
+  padding-left: 10px;
+  border-radius: 5px;
+  margin: 10px 0px 10px 0px;
+  cursor: text;
+}
+
+input:focus, select:focus{
+  outline-color: #246A6B;
+}
+
+.check-out{
+  position: relative;
+  left: 140px;
+}
+
+#checkIn{
+  display: inline-block;
+  width: 166px;
+  border-radius: 5px 0px 0px 5px;
+}
+
+#checkout{
+  display: inline-block;
+  width: 171px;
+  position: absolute;
+  left:208px;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.guests select{
+  border: 1px solid #E0D7D7;
+  width: 360px;
+  height: 45px;
+  padding-left: 10px;
+  border-radius: 5px;
+  margin: 10px 0px 10px 0px;
+  cursor: pointer;
+}
+
+.search-button{
+  position: relative;
+  left: 265px;
+  bottom: -20px;
+  padding: 10px 22px 10px 22px;
+  border: none;
+  background-color: #FF5A5F;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+select option{
+  font-size: 15px;
+  font-family: 'Lato', sans-serif;
+}
+
+.footer-text{
+  position: relative;
+  left: 1100px;
+  top: 475px;
+  color: white;
+}

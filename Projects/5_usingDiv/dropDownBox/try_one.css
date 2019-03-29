@@ -6,8 +6,8 @@
 body,html{
   height: 100%;
   width: 100%;
-  background-color: #ABC7C8;
-  color: #2EC4B6;
+  background-color: gray;
+  color: black;
   font-family: 'Lora', serif;
   font-size: 1.5em;
 }
@@ -15,7 +15,7 @@ body,html{
 .drop-down{
   text-align: center;
   position: relative;
-  top:40%;
+  top:10%;
   left: 30%;
   height: 20px;
   width: 500px;
@@ -33,22 +33,22 @@ body,html{
   display: none;
   list-style-type: none;
   position: absolute;
-  top: 0;
+  top: 50;
   height: 50px;
   width: 500px;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 .drop-down__options li:hover{
-  background: #DDE9C5;
+  background: #2EC4B6;
   border-radius: 10px;
 }
 
 .drop-down__title:hover{
-  background-color: #DAF2F0;
-  border-color: #DAF2F0;
+  background-color: #2EC4B6;
+  border-color: #2EC4B6;
 }
 
-.drop-down__title:hover .drop-down__options{
+.drop-down:hover .drop-down__options{
   display: block;
 }
